@@ -1,0 +1,57 @@
+Assignment 1
+- Master server, Tracker HTTP protocol: Kiệt
+- Peer:
+	+ Client, Peer-upload: Phong
+	+ Server, Peer-download: Phát
+
+- UI: ???
+
+Phase 1: Mô tả chức năng và protocols cho phần việc được giao
+	Dl: 13/4/2024
+
+Phase 2: Thực hiện chức năng
+	Dl: 27/4/2024
+
+link overleaf: https://www.overleaf.com/5671997735bkkqvjrtxgwj#a32e68
+
+
+Kiệt: UI, tkinter
+Lam Phát & Phong: Coding and implementing 
+Đạt với t: N ? M
+
+
+Piece size: 1MB = 2^20 Byte
+Peer:
+Python peer.py -> kết nối gửi ip port nó mở lên server
+- List all file -> trả về những file đang có mà sẵn sang up từ peer khác
+- upload <…> -> accept file, folder 
+ 	Tạo metainfo (tên, số lượng piece, hash,… ) -> server 
+	
+-download <…>  <…>-- accept file, folder
+	Lấy thông tin server -> connect tới các ip có, rồi xin file
+	1 file 1Gb -> 1000 piece, có 2 peer có thì mỗi peer down 500 piece.
+	Communication 2 peer: tao muốn down 500 piece đầu
+
+
+download 1 file/1 peer: if file 1 piece / 1 peer has file -> download from 1 peer, peer id - 1?
+
+
+
+download 1 file N peer/M pieces: set peer_id, while(num_pices >0 )
+
+download N file N peer/M pieces: set peer_id, while(num_pices >0 )
+
+
+192.168.56.1
+C:\Users\ADMIN\Downloads\AC - AMPERE COMPUTING.pdf
+C:\Users\ADMIN\Downloads\MMT\BTL\mycode
+
+status quản lý bn %, download file thì append vào self.files để lưu cho ui
+list theo hash
+upload (hash)
+ko download đã tồn tại (hash)
+self.files thêm absolute path
+
+part_data từ list -> file
+sendall là send chunk, cần send piece
+peer to tracker ghi vào file json

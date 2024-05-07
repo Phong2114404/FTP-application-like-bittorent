@@ -1,0 +1,13 @@
+sjdkfjdsalkjlk
+handle_client(self, client_socket, addr):
+tracker_host
+tracker_port
+my_ip
+my_port
+self.files
+request_peerS_info(filename):
+download_piece(self, ip_sender, port_sender, filename, start, end, part_data):
+handle_peer(client_socket):
+download_file(self, file_name, part_data):
+manage_downloads(self, requested_files):
+Signal Processing Toolbox trong Scilab cung cấp một loạt các hàm và thuật toán để xử lý và phân tích tín hiệu, có thể hữu ích cho xử lý âm thanh. Nó bao gồm các hàm cho việc lọc, phân tích phổ, phân tích thời gian-tần số và nhiều hơn nữa. Một số hàm quan trọng trong toolbox này là filter, fft, ifft, spectrogram, resample và wavread/wavwrite để đọc và ghi tệp âm thanh.
